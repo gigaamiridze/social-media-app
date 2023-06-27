@@ -1,27 +1,13 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import { Title } from './components';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView>
-      <View style={styles.container}>
-        <Text style={styles.text}>Social Media App</Text>
-      </View>
+      <Title title="Let's Explore" />
     </SafeAreaView>
   )
 }
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    height: '100%',
-    alignItems: 'center',
-    justifyContent: 'center', 
-  },
-  text: {
-    fontSize: 24,
-    fontFamily: 'Inter',
-    color: 'black',
-  },
-});
