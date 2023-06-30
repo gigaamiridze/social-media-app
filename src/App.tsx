@@ -4,7 +4,7 @@ import { Header, Stories } from './components';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: '#FFFFFF' }}>
       <Header />
       <Stories />
     </SafeAreaView>

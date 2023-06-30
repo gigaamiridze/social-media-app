@@ -6,6 +6,7 @@ export const style = StyleSheet.create({
     fontFamily: 'Inter',
     fontWeight: '700',
     color: '#022150',
-    lineHeight: 29
+    letterSpacing: 1,
+    lineHeight: 29,
   }
 });
