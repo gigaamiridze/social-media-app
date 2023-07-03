@@ -43,4 +43,9 @@ export const style = StyleSheet.create({
     lineHeight: 15,
     marginTop: 5,
   },
+  postImage: {
+    marginVertical: 16,
+    borderRadius: 16,
+    width: '100%',
+  },
 });

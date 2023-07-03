@@ -28,6 +28,11 @@ function UserPost(props: IUserPostProps) {
         </View>
         <FontAwesomeIcon icon={faEllipsis} color='#79869F' size={20} />
       </View>
+      <Image
+        resizeMode='cover'
+        source={require('../../assets/images/default_post.png')}
+        style={style.postImage}
+      />
     </View>
   )
 }
