@@ -33,6 +33,20 @@ function UserPost(props: IUserPostProps) {
         source={require('../../assets/images/default_post.png')}
         style={style.postImage}
       />
+      <View style={style.statisticsContainer}>
+        <View style={style.statisticWrapper}>
+          <Image source={require('../../assets/images/heart.png')} />
+          <Text style={style.statisticNumber}>{likes}</Text>
+        </View>
+        <View style={style.statisticWrapper}>
+          <Image source={require('../../assets/images/comment.png')} />
+          <Text style={style.statisticNumber}>{comments}</Text>
+        </View>
+        <View style={style.statisticWrapper}>
+          <Image source={require('../../assets/images/bookmark.png')} />
+          <Text style={style.statisticNumber}>{bookmarks}</Text>
+        </View>
+      </View>
     </View>
   )
 }

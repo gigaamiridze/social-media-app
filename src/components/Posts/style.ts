@@ -48,4 +48,20 @@ export const style = StyleSheet.create({
     borderRadius: 16,
     width: '100%',
   },
+  statisticsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: 25,
+  },
+  statisticWrapper: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    columnGap: 8,
+  },
+  statisticNumber: {
+    fontSize: 14,
+    fontWeight: '400',
+    fontFamily: 'Inter',
+    color: '#79869F',
+  },
 });
