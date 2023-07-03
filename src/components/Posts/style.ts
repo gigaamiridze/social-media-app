@@ -7,6 +7,8 @@ export const style = StyleSheet.create({
   },
   postContainer: {
     marginBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#EFF2F6',
   },
   postHeaderContainer: {
     flex: 1,
@@ -45,6 +47,7 @@ export const style = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     columnGap: 25,
+    marginBottom: 20,
   },
   statisticWrapper: {
     flexDirection: 'row',
