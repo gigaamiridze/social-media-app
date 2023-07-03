@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { Image, Text, View, Pressable } from 'react-native';
 import { IUserPostProps } from '../../interfaces';
 import { style } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -25,7 +25,9 @@ function UserPost(props: IUserPostProps) {
             )}
           </View>
         </View>
-        <FontAwesomeIcon icon={faEllipsis} color='#79869F' size={20} />
+        <Pressable>
+          <FontAwesomeIcon icon={faEllipsis} color='#79869F' size={20} />
+        </Pressable>
       </View>
       <Image
         resizeMode='cover'
@@ -33,18 +35,18 @@ function UserPost(props: IUserPostProps) {
         style={style.postImage}
       />
       <View style={style.statisticsContainer}>
-        <View style={style.statisticWrapper}>
+        <Pressable style={style.statisticWrapper}>
           <Image source={require('../../assets/images/heart.png')} />
           <Text style={style.statisticNumber}>{likes}</Text>
-        </View>
-        <View style={style.statisticWrapper}>
+        </Pressable>
+        <Pressable style={style.statisticWrapper}>
           <Image source={require('../../assets/images/comment.png')} />
           <Text style={style.statisticNumber}>{comments}</Text>
-        </View>
-        <View style={style.statisticWrapper}>
+        </Pressable>
+        <Pressable style={style.statisticWrapper}>
           <Image source={require('../../assets/images/bookmark.png')} />
           <Text style={style.statisticNumber}>{bookmarks}</Text>
-        </View>
+        </Pressable>
       </View>
     </View>
   )
