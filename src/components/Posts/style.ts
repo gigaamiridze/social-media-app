@@ -20,13 +20,6 @@ export const style = StyleSheet.create({
     alignItems: 'center',
     columnGap: 10
   },
-  userImageWrapper: {
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderColor: '#F35BAC',
-    borderRadius: 50,
-    padding: 3,
-  },
   name: {
     fontSize: 16,
     fontWeight: '500',

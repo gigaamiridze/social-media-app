@@ -8,13 +8,6 @@ export const style = StyleSheet.create({
   userStoryContainer: {
     marginRight: 20,
   },
-  userImageWrapper: {
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderColor: '#F35BAC',
-    borderRadius: 50,
-    padding: 3,
-  },
   firstName: {
     fontSize: 14,
     fontWeight: '500',
