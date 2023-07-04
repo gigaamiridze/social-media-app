@@ -1,7 +1,3 @@
-export interface IUserStoryProps {
-  firstName: string;
-}
-
 export interface IUserPostProps {
   firstName: string;
   lastName: string;

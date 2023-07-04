@@ -1,4 +1,6 @@
-export const stories = [
+import { IStory } from '../interfaces';
+
+export const stories: IStory[] = [
   {
     id: 1,
     firstName: 'Joseph',
