@@ -1,12 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
-  postsContainer: {
-    paddingHorizontal: 26,
-    marginTop: 30,
-  },
   postContainer: {
     marginBottom: 20,
+    paddingHorizontal: 26,
     borderBottomWidth: 1,
     borderBottomColor: '#EFF2F6',
   },
