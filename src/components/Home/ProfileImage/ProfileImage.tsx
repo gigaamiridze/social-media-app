@@ -5,7 +5,7 @@ import { style } from './style';
 function ProfileImage() {
   return (
     <View style={style.userImageWrapper}>
-      <Image source={require('../../assets/images/default_profile.png')} />
+      <Image source={require('../../../assets/images/default_profile.png')} />
     </View>
   )
 }

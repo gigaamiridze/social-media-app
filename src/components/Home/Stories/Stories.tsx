@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { FlatList, View } from 'react-native';
-import { IStory } from '../../interfaces';
-import { pagination } from '../../utils';
-import { stories } from '../../data';
+import { IStory } from '../../../interfaces';
+import { pagination } from '../../../utils';
+import { stories } from '../../../data';
 import { style } from './style';
 import UserStory from './UserStory';
 

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { FlatList } from 'react-native';
-import { IPost } from '../../interfaces';
-import { pagination } from '../../utils';
-import { posts } from '../../data';
-import { Header, Stories, UserPost } from '../../components';
+import { IPost } from '../../../interfaces';
+import { pagination } from '../../../utils';
+import { posts } from '../../../data';
+import { Header, Stories, UserPost } from '../../../components';
 
 function Posts() {
   const pageSize: number = 2;

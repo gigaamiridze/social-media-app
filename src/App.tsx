@@ -1,14 +1,11 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { Posts } from './components';
+import { Home } from './screens';
 
 function App() {
   return (
     <NavigationContainer>
-      <SafeAreaView style={{ backgroundColor: '#FFFFFF' }}>
-        <Posts />
-      </SafeAreaView>
+      <Home />
     </NavigationContainer>
   )
 }
