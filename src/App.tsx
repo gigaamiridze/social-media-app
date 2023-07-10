@@ -1,12 +1,15 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import { Posts } from './components';
 
-function App(): JSX.Element {
+function App() {
   return (
-    <SafeAreaView style={{ backgroundColor: '#FFFFFF' }}>
-      <Posts />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={{ backgroundColor: '#FFFFFF' }}>
+        <Posts />
+      </SafeAreaView>
+    </NavigationContainer>
   )
 }
 
