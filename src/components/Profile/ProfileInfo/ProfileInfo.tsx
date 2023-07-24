@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { style } from './style';
+import { Statistic } from '../Statistic';
 
 function ProfileInfo() {
   return (
@@ -9,6 +10,7 @@ function ProfileInfo() {
         <Image style={style.profileImage} source={require('../../../assets/images/default_profile.png')} />
       </View>
       <Text style={style.fullName}>Emmanuel Robertsen</Text>
+      <Statistic />
     </View>
   )
 }
