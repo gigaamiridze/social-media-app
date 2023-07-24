@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native';
 export const style = StyleSheet.create({
   profileInfo: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    rowGap: 20,
   },
   profileImageWrapper: {
     borderWidth: 2,
@@ -16,5 +17,11 @@ export const style = StyleSheet.create({
   profileImage: {
     width: 110,
     height: 110,
+  },
+  fullName: {
+    color: '#022150',
+    fontSize: 20,
+    fontFamily: 'Inter',
+    fontWeight: '700',
   },
 });

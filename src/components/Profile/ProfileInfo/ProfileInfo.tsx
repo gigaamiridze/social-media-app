@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { style } from './style';
 
 function ProfileInfo() {
@@ -8,6 +8,7 @@ function ProfileInfo() {
       <View style={style.profileImageWrapper}>
         <Image style={style.profileImage} source={require('../../../assets/images/default_profile.png')} />
       </View>
+      <Text style={style.fullName}>Emmanuel Robertsen</Text>
     </View>
   )
 }
