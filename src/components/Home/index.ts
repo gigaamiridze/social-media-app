@@ -1,4 +1,4 @@
-export * from './ProfileImage';
+export * from './UserImage';
 export * from './Stories';
 export * from './Header';
 export * from './Title';

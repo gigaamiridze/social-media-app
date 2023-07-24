@@ -4,7 +4,7 @@ import { IUserPostProps } from '../../../interfaces';
 import { style } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
-import { ProfileImage } from '../ProfileImage';
+import { UserImage } from '../UserImage';
 
 function UserPost(props: IUserPostProps) {
   const { firstName, lastName, location, likes, comments, bookmarks } = props;
@@ -13,7 +13,7 @@ function UserPost(props: IUserPostProps) {
     <View style={style.postContainer}>
       <View style={style.postHeaderContainer}>
         <View style={style.userInformation}>
-          <ProfileImage />
+          <UserImage />
           <View>
             <Text style={style.name}>
               {firstName} {lastName}
