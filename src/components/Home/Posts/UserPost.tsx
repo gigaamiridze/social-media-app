@@ -4,6 +4,7 @@ import { IUserPostProps } from '../../../interfaces';
 import { style } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import { HorizontalLine } from '../../HorizontalLine';
 import { UserImage } from '../UserImage';
 
 function UserPost(props: IUserPostProps) {
@@ -48,6 +49,7 @@ function UserPost(props: IUserPostProps) {
           <Text style={style.statisticNumber}>{bookmarks}</Text>
         </Pressable>
       </View>
+      <HorizontalLine />
     </View>
   )
 }

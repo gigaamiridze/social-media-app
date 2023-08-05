@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { ProfileInfo } from '../components';
+import { ProfileInfo, HorizontalLine } from '../components';
 import { globalStyle } from '../styles';
 
 function Profile() {
@@ -9,6 +9,7 @@ function Profile() {
       <ScrollView>
         <View style={style.profileScreenContainer}>
           <ProfileInfo />
+          <HorizontalLine />
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -4,8 +4,6 @@ export const style = StyleSheet.create({
   postContainer: {
     marginBottom: 20,
     paddingHorizontal: 26,
-    borderBottomWidth: 1,
-    borderBottomColor: '#EFF2F6',
   },
   postHeaderContainer: {
     flex: 1,

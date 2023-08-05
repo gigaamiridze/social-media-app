@@ -6,6 +6,7 @@ export const style = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     rowGap: 20,
+    marginBottom: 30,
   },
   profileImageWrapper: {
     borderWidth: 2,
