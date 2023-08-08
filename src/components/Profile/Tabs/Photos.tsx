@@ -1,9 +1,18 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
 
 function Photos() {
   return (
-    <Text>Photos</Text>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <Text>Photos</Text>
+    </View>
   )
 }
 

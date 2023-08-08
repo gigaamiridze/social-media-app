@@ -7,10 +7,10 @@ import { globalStyle } from '../styles';
 function Profile() {
   return (
     <SafeAreaView style={[globalStyle.backgroundWhite, globalStyle.flex]}>
-      <ScrollView>
-        <View style={style.profileScreenContainer}>
-          <ProfileInfo />
-          <HorizontalLine />
+      <ScrollView style={style.profileScreenContainer}>
+        <ProfileInfo />
+        <HorizontalLine />
+        <View style={style.tabsContainer}>
           <ProfileTabs />
         </View>
       </ScrollView>
@@ -21,8 +21,12 @@ function Profile() {
 export default Profile;
 
 const style = StyleSheet.create({
-  profileScreenContainer: {
+  profileScreenContainer: {    
     paddingTop: 32,
     paddingHorizontal: 20,
+  },
+  tabsContainer: {
+    height: 350,
+    marginTop: 15,
   },
 });
