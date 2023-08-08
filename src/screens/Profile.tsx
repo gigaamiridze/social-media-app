@@ -7,7 +7,7 @@ import { globalStyle } from '../styles';
 function Profile() {
   return (
     <SafeAreaView style={[globalStyle.backgroundWhite, globalStyle.flex]}>
-      <ScrollView style={style.profileScreenContainer}>
+      <ScrollView showsVerticalScrollIndicator={false} style={style.profileScreenContainer}>
         <ProfileInfo />
         <HorizontalLine />
         <View style={style.tabsContainer}>

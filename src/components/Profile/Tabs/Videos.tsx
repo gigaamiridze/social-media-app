@@ -1,18 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { TabPosts } from '../TabPosts';
 
 function Videos() {
   return (
-    <View
-      style={{
-        flex: 1,
-        backgroundColor: 'white',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      <Text>Videos</Text>
-    </View>
+    <TabPosts />
   )
 }
 
