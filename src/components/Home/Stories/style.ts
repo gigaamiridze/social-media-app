@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 
 export const style = StyleSheet.create({
   storiesContainer: {
-    paddingHorizontal: 26,
     marginBottom: 30,
     marginTop: 12,
   },

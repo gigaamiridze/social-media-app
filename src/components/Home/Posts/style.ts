@@ -3,7 +3,6 @@ import { StyleSheet } from 'react-native';
 export const style = StyleSheet.create({
   postContainer: {
     marginBottom: 20,
-    paddingHorizontal: 26,
   },
   postHeaderContainer: {
     flex: 1,

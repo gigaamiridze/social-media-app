@@ -6,9 +6,6 @@ export const style = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingTop: 20,
-    paddingRight: 17,
-    paddingLeft: 26,
   },
   messageIcon: {
     backgroundColor: '#F9FAFB',
