@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, View, Text } from 'react-native';
+import { SearchInput } from '../components';
 import { globalStyle } from '../styles';
 
 function Messages() {
@@ -14,9 +15,7 @@ function Messages() {
       }
     >
       <ScrollView showsVerticalScrollIndicator={false}>
-        <View>
-          <Text>Messages</Text>
-        </View>
+        <SearchInput />
       </ScrollView>
     </SafeAreaView>
   )
