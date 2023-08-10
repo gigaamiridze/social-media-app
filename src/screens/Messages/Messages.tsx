@@ -1,6 +1,6 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, View, Text } from 'react-native';
-import { SearchInput } from '../../components';
+import { SearchInput, MessageItem } from '../../components';
 import { globalStyle } from '../../styles';
 import { style } from './style';
 
@@ -21,6 +21,7 @@ function Messages() {
           <Text style={style.messagesTitle}>Messages</Text>
           <Text style={style.messageQtyTitle}>(7)</Text>
         </View>
+        <MessageItem />
       </ScrollView>
     </SafeAreaView>
   )
