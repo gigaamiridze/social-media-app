@@ -1,8 +1,9 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import { ProfileInfo, HorizontalLine } from '../components';
-import { ProfileTabs } from '../navigation';
-import { globalStyle } from '../styles';
+import { SafeAreaView, ScrollView, View } from 'react-native';
+import { ProfileInfo, HorizontalLine } from '../../components';
+import { ProfileTabs } from '../../navigation';
+import { globalStyle } from '../../styles';
+import { style } from './style';
 
 function Profile() {
   return (
@@ -30,13 +31,3 @@ function Profile() {
 }
 
 export default Profile;
-
-const style = StyleSheet.create({
-  profileScreenContainer: {    
-    paddingTop: 12,
-  },
-  tabsContainer: {
-    height: 350,
-    marginTop: 15,
-  },
-});

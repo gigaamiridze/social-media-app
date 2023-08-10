@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, SafeAreaView } from 'react-native';
-import { globalStyle } from '../styles';
-import { Posts } from '../components';
+import { SafeAreaView } from 'react-native';
+import { globalStyle } from '../../styles';
+import { Posts } from '../..//components';
 
 function Home() {
   return (
