@@ -46,6 +46,7 @@ export const style = StyleSheet.create({
     fontWeight: '400',
     fontSize: 14,
     color: '#8A94A4',
+    marginTop: 3,
     marginBottom: 15,
   },
 });

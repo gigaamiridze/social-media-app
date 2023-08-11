@@ -7,6 +7,7 @@ export const messages: IMessage[] = [
     name: 'Anderson',
     messageContent: 'Hello, Nice to meet you!',
     timeSend: '20:12',
+    avatarColor: '#FA8659',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const messages: IMessage[] = [
     name: 'Lewandowski',
     messageContent: 'Thanks for your time.',
     timeSend: '17:24',
+    avatarColor: '#25C0FF',
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const messages: IMessage[] = [
     name: 'Rodrigo',
     messageContent: 'Send invitation',
     timeSend: '15:33',
+    avatarColor: '#156CF7',
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const messages: IMessage[] = [
     name: 'Bambang Ave',
     messageContent: 'Yes, this is same for...',
     timeSend: '19:10',
+    avatarColor: '#4CDF16',
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ export const messages: IMessage[] = [
     name: 'Thomas Partey',
     messageContent: 'Okay, I waiting for you...',
     timeSend: '12:45',
+    avatarColor: '#EC18E8',
   },
   {
     id: 6,
@@ -42,5 +47,6 @@ export const messages: IMessage[] = [
     name: 'Jajang S',
     messageContent: 'Take medication regularly',
     timeSend: '18:25',
+    avatarColor: '#FA2222',
   },
 ]

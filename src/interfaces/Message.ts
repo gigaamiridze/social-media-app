@@ -4,4 +4,9 @@ export interface IMessage {
   name: string;
   messageContent: string;
   timeSend: string;
+  avatarColor: string;
+}
+
+export interface IMessageItemProps {
+  message: IMessage;
 }

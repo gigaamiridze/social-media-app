@@ -1,20 +1,23 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { HorizontalLine } from '../../HorizontalLine';
+import { IMessageItemProps } from '../../../interfaces';
 import { style } from './style';
 
-function MessageItem() {
+function MessageItem({ message }: IMessageItemProps) {
+  const { initials, name, messageContent, timeSend, avatarColor } = message;
+  
   return (
     <View style={style.messageItemContainer}>
-      <View style={[style.contactAvatar, { backgroundColor: '#fa2222' }]}>
-        <Text style={style.contactInitials}>LW</Text>
+      <View style={[style.contactAvatar, { backgroundColor: avatarColor }]}>
+        <Text style={style.contactInitials}>{initials}</Text>
       </View>
       <View style={style.contactDetails}>
         <View style={style.flexBlock}>
-          <Text style={style.contactName}>Lewandowski</Text>
-          <Text style={style.timeSend}>20:45</Text>
+          <Text style={style.contactName}>{name}</Text>
+          <Text style={style.timeSend}>{timeSend}</Text>
         </View>
-        <Text style={style.messageContent}>Hello, Nice to meet you!</Text>
+        <Text style={style.messageContent}>{messageContent}</Text>
         <HorizontalLine />
       </View>
     </View>

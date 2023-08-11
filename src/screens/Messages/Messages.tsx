@@ -1,7 +1,8 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, View, Text } from 'react-native';
+import { SafeAreaView, ScrollView, View, Text, FlatList } from 'react-native';
 import { SearchInput, MessageItem } from '../../components';
 import { globalStyle } from '../../styles';
+import { messages } from '../../data';
 import { style } from './style';
 
 function Messages() {
@@ -21,7 +22,12 @@ function Messages() {
           <Text style={style.messagesTitle}>Messages</Text>
           <Text style={style.messageQtyTitle}>(7)</Text>
         </View>
-        <MessageItem />
+        <FlatList
+          showsVerticalScrollIndicator={false}
+          data={messages}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item }) => <MessageItem message={item} />}
+        />
       </ScrollView>
     </SafeAreaView>
   )
