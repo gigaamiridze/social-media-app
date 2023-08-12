@@ -1,11 +1,23 @@
-import React from 'react';
-import { SafeAreaView, ScrollView, View, Text, FlatList } from 'react-native';
+import React, { useState } from 'react';
+import { SafeAreaView, View, Text, FlatList } from 'react-native';
 import { SearchInput, MessageItem } from '../../components';
+import { IMessage } from '../../interfaces';
 import { globalStyle } from '../../styles';
 import { messages } from '../../data';
 import { style } from './style';
 
 function Messages() {
+  const [filteredMessages, setFilteredMessages] = useState<IMessage[]>(messages);
+  const [searchQuery, setSearchQuery] = useState<string>('');
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    const filtered = messages.filter(message => {
+      return message.name.toLowerCase().includes(query.toLowerCase());
+    });
+    setFilteredMessages(filtered);
+  }
+
   return (
     <SafeAreaView
       style={
@@ -16,19 +28,17 @@ function Messages() {
         ]
       }
     >
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <SearchInput />
-        <View style={style.titlesContainer}>
-          <Text style={style.messagesTitle}>Messages</Text>
-          <Text style={style.messageQtyTitle}>(7)</Text>
-        </View>
-        <FlatList
-          showsVerticalScrollIndicator={false}
-          data={messages}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => <MessageItem message={item} />}
-        />
-      </ScrollView>
+      <SearchInput searchQuery={searchQuery} handleSearch={handleSearch} />
+      <View style={style.titlesContainer}>
+        <Text style={style.messagesTitle}>Messages</Text>
+        <Text style={style.messageQtyTitle}>(7)</Text>
+      </View>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        data={filteredMessages}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <MessageItem message={item} />}
+      />
     </SafeAreaView>
   )
 }
