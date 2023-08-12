@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, Text, FlatList } from 'react-native';
+import { SafeAreaView, View, Text, FlatList, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import { SearchInput, MessageItem } from '../../components';
 import { IMessage } from '../../interfaces';
 import { globalStyle } from '../../styles';
@@ -19,27 +19,32 @@ function Messages() {
   }
 
   return (
-    <SafeAreaView
-      style={
-        [
-          globalStyle.backgroundWhite,
-          globalStyle.flex,
-          globalStyle.screenContainer
-        ]
-      }
+    <TouchableWithoutFeedback
+      onPress={Keyboard.dismiss}
+      accessible={false}
     >
-      <SearchInput searchQuery={searchQuery} handleSearch={handleSearch} />
-      <View style={style.titlesContainer}>
-        <Text style={style.messagesTitle}>Messages</Text>
-        <Text style={style.messageQtyTitle}>(7)</Text>
-      </View>
-      <FlatList
-        showsVerticalScrollIndicator={false}
-        data={filteredMessages}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <MessageItem message={item} />}
-      />
-    </SafeAreaView>
+      <SafeAreaView
+        style={
+          [
+            globalStyle.backgroundWhite,
+            globalStyle.flex,
+            globalStyle.screenContainer
+          ]
+        }
+      >
+        <SearchInput searchQuery={searchQuery} handleSearch={handleSearch} />
+        <View style={style.titlesContainer}>
+          <Text style={style.messagesTitle}>Messages</Text>
+          <Text style={style.messageQtyTitle}>(7)</Text>
+        </View>
+        <FlatList
+          showsVerticalScrollIndicator={false}
+          data={filteredMessages}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item }) => <MessageItem message={item} />}
+        />
+      </SafeAreaView>
+    </TouchableWithoutFeedback>
   )
 }
 
