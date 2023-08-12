@@ -18,6 +18,7 @@ export const style = StyleSheet.create({
   profileImage: {
     width: 110,
     height: 110,
+    borderRadius: 50,
   },
   fullName: {
     color: '#022150',

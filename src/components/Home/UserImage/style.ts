@@ -8,4 +8,9 @@ export const style = StyleSheet.create({
     borderRadius: 50,
     padding: 3,
   },
+  userImage: {
+    width: 55,
+    height: 55,
+    borderRadius: 50,
+  },
 });

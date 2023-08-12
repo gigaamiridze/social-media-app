@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { IUserStoryProps } from '../../../interfaces';
+import { IUserFirstNameProp } from '../../../interfaces';
 import { style } from './style';
 import { UserImage } from '../UserImage';
 
-function UserStory(props: IUserStoryProps) {
+function UserStory({ firstName }: IUserFirstNameProp) {
   return (
     <View style={style.userStoryContainer}>
-      <UserImage />
-      <Text style={style.firstName}>{props.firstName}</Text>
+      <UserImage firstName={firstName} />
+      <Text style={style.firstName}>{firstName}</Text>
     </View>
   )
 }

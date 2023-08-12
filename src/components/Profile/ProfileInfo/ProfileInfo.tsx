@@ -7,7 +7,7 @@ function ProfileInfo() {
   return (
     <View style={style.profileInfo}>
       <View style={style.profileImageWrapper}>
-        <Image style={style.profileImage} source={require('../../../assets/images/default_profile.png')} />
+        <Image style={style.profileImage} source={require('../../../assets/images/users/olivier.jpg')} />
       </View>
       <Text style={style.fullName}>Emmanuel Robertsen</Text>
       <Statistic />
