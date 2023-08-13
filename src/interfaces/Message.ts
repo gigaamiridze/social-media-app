@@ -9,4 +9,5 @@ export interface IMessage {
 
 export interface IMessageItemProps {
   message: IMessage;
+  isLast: boolean;
 }

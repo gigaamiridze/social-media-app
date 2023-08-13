@@ -1,4 +1,5 @@
-export interface IUserPostProps {
+export interface IPost {
+  id: number;
   firstName: string;
   lastName: string;
   location: string;
@@ -7,6 +8,7 @@ export interface IUserPostProps {
   bookmarks: number;
 }
 
-export interface IPost extends IUserPostProps {
-  id: number;
+export interface IUserPostProps {
+  post: IPost;
+  isLast: boolean;
 }

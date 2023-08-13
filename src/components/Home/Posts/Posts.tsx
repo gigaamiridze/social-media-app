@@ -34,20 +34,12 @@ function Posts() {
       showsVerticalScrollIndicator={false}
       keyExtractor={(item) => item.id.toString()}
       data={renderedData}
-      renderItem={({item}) => {
-        const { firstName, lastName, location, likes, comments, bookmarks } = item;
-
-        return (
-          <UserPost 
-            firstName={firstName}
-            lastName={lastName}
-            location={location}
-            likes={likes}
-            comments={comments}
-            bookmarks={bookmarks}
-          />
-        )
-      }}
+      renderItem={({ item, index }) => (
+        <UserPost 
+          post={item}
+          isLast={index === renderedData.length - 1}
+        />
+      )}
     />
   )
 }

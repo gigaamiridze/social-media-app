@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import { Image, Text, View, Pressable } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
@@ -6,9 +6,8 @@ import { IUserPostProps, IImageMapping } from '../../../interfaces';
 import { HorizontalLine, UserImage } from '../../../components';
 import { style } from './style';
 
-function UserPost(props: IUserPostProps) {
-  const { firstName, lastName, location, likes, comments, bookmarks } = props;
-
+function UserPost({ post, isLast }: IUserPostProps) {
+  const { firstName, lastName, location, likes, comments, bookmarks } = post;
   const BASE_URL = '../../../assets/images/posts';
 
   const imageMapping: IImageMapping = {
@@ -61,7 +60,7 @@ function UserPost(props: IUserPostProps) {
           <Text style={style.statisticNumber}>{bookmarks}</Text>
         </Pressable>
       </View>
-      <HorizontalLine />
+      {!isLast && <HorizontalLine />}
     </View>
   )
 }

@@ -41,7 +41,12 @@ function Messages() {
           showsVerticalScrollIndicator={false}
           data={filteredMessages}
           keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => <MessageItem message={item} />}
+          renderItem={({ item, index }) => (
+            <MessageItem 
+              message={item}
+              isLast={index === filteredMessages.length - 1}
+            />
+          )}
         />
       </SafeAreaView>
     </TouchableWithoutFeedback>

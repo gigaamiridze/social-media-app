@@ -4,7 +4,7 @@ import { HorizontalLine } from '../../HorizontalLine';
 import { IMessageItemProps } from '../../../interfaces';
 import { style } from './style';
 
-function MessageItem({ message }: IMessageItemProps) {
+function MessageItem({ message, isLast }: IMessageItemProps) {
   const { initials, name, messageContent, timeSend, avatarColor } = message;
   
   return (
@@ -18,7 +18,7 @@ function MessageItem({ message }: IMessageItemProps) {
           <Text style={style.timeSend}>{timeSend}</Text>
         </View>
         <Text style={style.messageContent}>{messageContent}</Text>
-        <HorizontalLine />
+        {!isLast && <HorizontalLine />}
       </View>
     </View>
   )
