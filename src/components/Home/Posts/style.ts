@@ -33,9 +33,10 @@ export const style = StyleSheet.create({
     marginTop: 5,
   },
   postImage: {
+    width: '100%',
+    height: 220,
     marginVertical: 16,
     borderRadius: 16,
-    width: '100%',
   },
   statisticsContainer: {
     flexDirection: 'row',

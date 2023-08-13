@@ -32,7 +32,7 @@ export const posts: IPost[] = [
     id: 4,
     firstName: 'Nata',
     lastName: 'Vacheishvili',
-    location: 'New York, New York',
+    location: 'New York, USA',
     likes: 300,
     comments: 18,
     bookmarks: 17,

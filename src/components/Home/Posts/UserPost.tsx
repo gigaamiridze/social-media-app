@@ -1,14 +1,26 @@
-import React from 'react';
+// import React from 'react';
 import { Image, Text, View, Pressable } from 'react-native';
-import { IUserPostProps } from '../../../interfaces';
-import { style } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
-import { HorizontalLine } from '../../HorizontalLine';
-import { UserImage } from '../UserImage';
+import { IUserPostProps, IImageMapping } from '../../../interfaces';
+import { HorizontalLine, UserImage } from '../../../components';
+import { style } from './style';
 
 function UserPost(props: IUserPostProps) {
   const { firstName, lastName, location, likes, comments, bookmarks } = props;
+
+  const BASE_URL = '../../../assets/images/posts';
+
+  const imageMapping: IImageMapping = {
+    'Allison': require(`${BASE_URL}/neon.jpg`),
+    'Jennifer': require(`${BASE_URL}/passion.jpg`),
+    'Adam': require(`${BASE_URL}/skateboarding.jpg`),
+    'Nata': require(`${BASE_URL}/new-york.jpg`),
+    'Nicolas': require(`${BASE_URL}/sea-beach.jpg`),
+    'Giga': require(`${BASE_URL}/coding.jpg`),
+  };
+
+  const imageSource = imageMapping[firstName] || require(`${BASE_URL}/default_post.png`);
 
   return (
     <View style={style.postContainer}>
@@ -32,7 +44,7 @@ function UserPost(props: IUserPostProps) {
       </View>
       <Image
         resizeMode='cover'
-        source={require('../../../assets/images/default_post.png')}
+        source={imageSource}
         style={style.postImage}
       />
       <View style={style.statisticsContainer}>

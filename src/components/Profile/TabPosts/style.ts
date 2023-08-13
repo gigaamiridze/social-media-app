@@ -15,6 +15,7 @@ export const style = StyleSheet.create({
   tabImage: {
     maxWidth: '47%',
     maxHeight: 112,
+    borderRadius: 16,
   },
   imageUpcomingRowsContainer: {
     marginTop: 10,
