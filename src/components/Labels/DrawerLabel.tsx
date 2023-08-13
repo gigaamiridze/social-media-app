@@ -1,24 +1,24 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { ITabTitleProps } from '../../../interfaces';
+import { ILabelProps } from '../../interfaces';
 import { style } from './style';
 
-function TabTitle(props: ITabTitleProps) {
-  const { title, isFocused } = props;
-
+function DrawerLabel(props: ILabelProps) {
+  const { label, isFocused } = props;
+  
   return (
     <Text 
       style={[
-        style.title,
+        style.label,
         {
           color: isFocused ? '#022150' : '#79869F',
           fontWeight: isFocused ? '500' : '400',
         }
       ]}
     >
-      {title}
+      {label}
     </Text>
   )
 }
 
-export default TabTitle;
+export default DrawerLabel;

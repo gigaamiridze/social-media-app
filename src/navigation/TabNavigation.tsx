@@ -1,6 +1,6 @@
 import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Photos, Videos, Saved, TabTitle } from '../components';
+import { Photos, Videos, Saved, TabBarLabel } from '../components';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -22,7 +22,7 @@ function ProfileTabs() {
         component={Photos}
         options={{
           tabBarLabel: ({ focused }) => {
-            return <TabTitle title='Photos' isFocused={focused} />
+            return <TabBarLabel label='Photos' isFocused={focused} />
           }
         }} 
       />
@@ -31,16 +31,16 @@ function ProfileTabs() {
         component={Videos}
         options={{
           tabBarLabel: ({ focused }) => {
-            return <TabTitle title='Videos' isFocused={focused} />
+            return <TabBarLabel label='Videos' isFocused={focused} />
           }
-        }} 
+        }}
       />
       <Tab.Screen 
         name='Saved' 
         component={Saved}
         options={{
           tabBarLabel: ({ focused }) => {
-            return <TabTitle title='Saved' isFocused={focused} />
+            return <TabBarLabel label='Saved' isFocused={focused} />
           }
         }} 
       />
