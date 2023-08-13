@@ -1,3 +1,4 @@
+export * from './ImageMapping';
 export * from './FirstName';
 export * from './Message';
 export * from './Title';
