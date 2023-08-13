@@ -14,7 +14,7 @@ function UserPost(props: IUserPostProps) {
     <View style={style.postContainer}>
       <View style={style.postHeaderContainer}>
         <View style={style.userInformation}>
-          <UserImage />
+          <UserImage firstName={firstName} />
           <View>
             <Text style={style.name}>
               {firstName} {lastName}

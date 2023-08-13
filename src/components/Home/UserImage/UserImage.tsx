@@ -17,6 +17,11 @@ function UserImage({ firstName }: IUserFirstNameProp) {
     'Travis': require(`${BASE_URL}/travis.jpg`),
     'Don': require(`${BASE_URL}/don.jpg`),
     'Sean': require(`${BASE_URL}/sean.jpg`),
+    'Allison': require(`${BASE_URL}/allison.jpg`),
+    'Jennifer': require(`${BASE_URL}/jennifer.jpg`),
+    'Adam': require(`${BASE_URL}/adam.jpg`),
+    'Nata': require(`${BASE_URL}/nata.jpg`),
+    'Nicolas': require(`${BASE_URL}/nicolas.jpg`),
   };
 
   const imageSource = imageMapping[firstName] || require(`${BASE_URL}/default_profile.png`);
