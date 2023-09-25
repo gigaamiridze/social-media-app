@@ -1,6 +1,8 @@
 # Social Media App
 
-The social media mobile application built using React Native with TypeScript and React Navigation, it offers users the ability to view stories, posts, and messages.
+An innovative mobile app built using React Native with TypeScript and powered by seamless React Navigation. 
+
+Immerse yourself in a world of captivating stories, captivating posts, and instant messaging like never before. Stay connected with friends and discover new connections.
 
 ## App Video Review
 
